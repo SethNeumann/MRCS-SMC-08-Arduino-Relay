@@ -7,6 +7,7 @@ described by Dr Bruce Chubb MMR in his CMRI Application Handbook V 3.0, pages 7-
 [this is an excellent reference on Model Railroad control and signaling and should be in the library of EVERY model railroader interested 
 in electronics]. 
 
-The design of the SMC is modular where a single LM324 quad Op Amp/Comparator controls a pair of Tortii. I have implemented 8 circuits and provided an input
-connector compatible with the most common 8 channel Arduino Relay. In this way your code on the Arduino Relay Controller doesn't need to know
+The design of the SMC is modular where a single LM324 quad Op Amp/Comparator controls a pair of Tortii. I have implemented 8 circuits and 
+provided an input connector compatible with the most common 8 channel Arduino Relay. I've also added a ULN2803 as an octal buffer so you can
+drive the 12V ops amps directly from your Arduino. In this way your code on the Arduino Relay Controller doesn't need to know
 whether the device is a Tortoise or an MPx, you simply use the appropriate board.
